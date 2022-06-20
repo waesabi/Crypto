@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct CryptoApp: App {
+	
+	@State var show = false
+	
     var body: some Scene {
         WindowGroup {
-            ContentView()
+			NavigationStack {
+				HomeView()
+				// CircleButtonAnimationView(animate: $show)
+			}
         }
     }
 }
