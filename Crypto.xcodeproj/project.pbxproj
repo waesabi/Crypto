@@ -9,16 +9,18 @@
 /* Begin PBXBuildFile section */
 		45B55B2D2860A12E00B76B60 /* CryptoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B55B2C2860A12E00B76B60 /* CryptoApp.swift */; };
 		45B55B2F2860A12E00B76B60 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B55B2E2860A12E00B76B60 /* ContentView.swift */; };
-		45B55B312860A13100B76B60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45B55B302860A13100B76B60 /* Assets.xcassets */; };
 		45B55B342860A13100B76B60 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45B55B332860A13100B76B60 /* Preview Assets.xcassets */; };
+		45B55B3B2860A33D00B76B60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45B55B3A2860A33D00B76B60 /* Assets.xcassets */; };
+		45B55B3E2860A3FB00B76B60 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B55B3D2860A3FB00B76B60 /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		45B55B292860A12E00B76B60 /* Crypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45B55B2C2860A12E00B76B60 /* CryptoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoApp.swift; sourceTree = "<group>"; };
 		45B55B2E2860A12E00B76B60 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		45B55B302860A13100B76B60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45B55B332860A13100B76B60 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		45B55B3A2860A33D00B76B60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../Downloads/Crypto App Resources/Assets.xcassets"; sourceTree = "<group>"; };
+		45B55B3D2860A3FB00B76B60 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +53,10 @@
 		45B55B2B2860A12E00B76B60 /* Crypto */ = {
 			isa = PBXGroup;
 			children = (
+				45B55B3C2860A3B800B76B60 /* extensions */,
 				45B55B2C2860A12E00B76B60 /* CryptoApp.swift */,
 				45B55B2E2860A12E00B76B60 /* ContentView.swift */,
-				45B55B302860A13100B76B60 /* Assets.xcassets */,
+				45B55B3A2860A33D00B76B60 /* Assets.xcassets */,
 				45B55B322860A13100B76B60 /* Preview Content */,
 			);
 			path = Crypto;
@@ -65,6 +68,14 @@
 				45B55B332860A13100B76B60 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		45B55B3C2860A3B800B76B60 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				45B55B3D2860A3FB00B76B60 /* Color.swift */,
+			);
+			path = extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45B55B342860A13100B76B60 /* Preview Assets.xcassets in Resources */,
-				45B55B312860A13100B76B60 /* Assets.xcassets in Resources */,
+				45B55B3B2860A33D00B76B60 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +150,7 @@
 			files = (
 				45B55B2F2860A12E00B76B60 /* ContentView.swift in Sources */,
 				45B55B2D2860A12E00B76B60 /* CryptoApp.swift in Sources */,
+				45B55B3E2860A3FB00B76B60 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,11 +282,12 @@
 				DEVELOPMENT_TEAM = UBF8T346G9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortraitUpsideDown;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -282,6 +295,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = sanketkumar.Crypto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -299,11 +315,12 @@
 				DEVELOPMENT_TEAM = UBF8T346G9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortraitUpsideDown;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,6 +328,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = sanketkumar.Crypto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
